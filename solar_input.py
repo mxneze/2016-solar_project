@@ -48,13 +48,13 @@ def parse_star_parameters(line, star):
     **star** — объект звезды.
     """
     star.type = line.split()[0].lower()
-    star.r = int(line.split()[1])
+    star.r = float(line.split()[1])
     star.color = line.split()[2]
-    star.m = int(line.split()[3])
-    star.x = int(line.split()[4])
-    star.y = int(line.split()[5])
-    star.Vx = int(line.split()[6])
-    star.Vy = int(line.split()[7])
+    star.m = float(line.split()[3])
+    star.x = float(line.split()[4])
+    star.y = float(line.split()[5])
+    star.Vx = float(line.split()[6])
+    star.Vy = float(line.split()[7])
     pass  # FIXME: not done yet
 
 
@@ -74,13 +74,13 @@ def parse_planet_parameters(line, planet):
     **planet** — объект планеты.
     """
     planet.type = line.split()[0].lower()
-    planet.r = int(line.split()[1])
+    planet.r = float(line.split()[1])
     planet.color = line.split()[2]
-    planet.m = int(line.split()[3])
-    planet.x = int(line.split()[4])
-    planet.y = int(line.split()[5])
-    planet.Vx = int(line.split()[6])
-    planet.Vy = int(line.split()[7])
+    planet.m = float(line.split()[3])
+    planet.x = float(line.split()[4])
+    planet.y = float(line.split()[5])
+    planet.Vx = float(line.split()[6])
+    planet.Vy = float(line.split()[7])
     pass  # FIXME: not done yet...
 
 
